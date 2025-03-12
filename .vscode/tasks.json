@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Analyze Code",
+            "type": "shell",
+            "command": "python",
+            "args": ["app.py", "${file}", "analyze"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Debug Code",
+            "type": "shell",
+            "command": "python",
+            "args": ["app.py", "${file}", "debug"],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Optimize Code",
+            "type": "shell",
+            "command": "python",
+            "args": ["app.py", "${file}", "optimize"],
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
